@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    max-width: 400px;
+    margin: auto;
+}
+#container #cal_card{
+    max-width: 400px;
+    margin: auto;
+    height: auto;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 15px;
+
+}
+#container #cal_card h1{
+    text-align: center;
+    color: rgb(18, 11, 43);
+    font-size: 28px;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#container #cal_card #input_group{
+    margin-top: 20px;
+}
+#container #cal_card #input_group #input{
+    width: 310px;
+    margin: auto;
+    padding-top: 10px;
+}
+#container #cal_card #input_group #input #inp{
+    display: flex;
+    justify-content: space-between;
+}
+
+label{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgb(24, 60, 66);
+}
+input{
+    padding: 5px;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid rgb(21, 39, 78);
+    margin-bottom: 7px;
+}
+
+
+
+input:focus  {
+    border: 2px solid rgb(24, 231, 59);
+}
+
+#container #cal_card #show{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+button{
+    padding: 10px 15px ;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: none;
+    background-color: rgb(138, 117, 158);
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+
+}
+/* #container #cal_card #show #multification{
+    
+}
+
+#container #cal_card #show #devided{
+   
+
+} */
+#output{
+    margin-top: 20px;
+    color: rgb(40, 100, 212);
+    text-shadow: 1px 1px 3px  5px rgba(0, green, 0, 0.5);
+    text-align: center;
+}
+
+/* timer */
+.timer{
+    text-align: center;
+    color: brown;
+    padding: 10px;
+    font-size: 20px;
+    font-family: monospace;
+
+}
+
+/* bills cards */
+
+#bills_card_caontainer{
+    margin: 30px 0 30px 0;
+}
+.bills_card{
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.bills_card>h2{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
+
+}
+.input_groups{
+    margin-top: 20px;
+
+}
+.bill{
+    display: flex;
+    justify-content: space-between
+}
+.show{
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+/* rafaell draw */
+.rafaelDraw{
+    margin: 20px 0 20px 0;
+}
+.conatiner_rafael{
+    max-width: 400px;
+    padding: 10px;
+    margin: auto;
+    box-shadow: inset 0 0 3px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+
+}
+h1{
+    text-align: center;
+
+}
+.txt_input_group{
+    display: flex;
+    justify-content: center;
+}
+.add{
+    height: 50px; 
+    /* padding: px; */
+    background-color: blueviolet;
+}
+div >.txt_input_field{
+    /* width: 100%; */
+    height: 100%;
+    padding: 10px;
+  
+    
+}
+.names{
+    text-align: center;
+    word-wrap:break-word;    
+}
+.selected{
+    text-align: center;    
+}
+.selectbtn{
+    background-color:coral;
+}
+.selectbtn:hover{
+    color: coral;
+    border: 1px solid coral;
+    background: #fff;
+}
+
+.selected_name{
+    visibility:hidden;
+    color: blueviolet;
+}
+
+
+
+.rouded_icon{
+    margin: 10px;
+    font-size: 25px;
+    /* visibility: hidden; */
+    animation-name: example;
+
+}
+
+@keyframes example {
+    from {transform: rotate(0deg)};
+    to {transform: rotate(360deg)};
+  }
+
+  .rouded_icon:hover {
+    transform: rotate(359deg);
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-name: example;
+
+  }
+/* .selected_name{ */
+    /* margin: 10px; */
+
+/* }  */
+/* product card*/
+
+.productCard{
+    margin: 20px 0 ;
+}
+.productCard .cardContainer{
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    padding: 10px;
+}
+.productCard .cardContainer .cardspd{
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+  
+}
+
+/* searching algorithm */
+.searching{
+    margin: 20px 0;
+}
+.searching .searching_card{
+    max-width: 500px;
+    margin: auto;
+
+    box-shadow:  0 0 3px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+.searching .searching_card .srhValue{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+

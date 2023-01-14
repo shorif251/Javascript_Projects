@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h2>This is a welcoming notification</h2>
+    </div>
+    <div class="body">
+        <h1>Welcome Back</h1>
+        <div id="container">
+            <div id="cal_card">
+                <h1>Calculation Card</h1>
+                <div id="input_group">
+                    <div id="input">
+                        <div id="inp">
+                            <label>First Number</label>
+                            <input type="text" id="input1" name="input1" value="" required>
+                        </div>
+
+                        <div id="inp">
+                            <label>Last Number</label>
+                            <input type="text" id="input2" name="input2" value="" required>
+                        </div>
+                    </div>
+                </div>
+                <div id="show">
+                    <div id="multification">
+                        <button onclick="multification()" id="mul_btn">Multification</button>
+
+                    </div>
+                    <div id="devided">
+                        <button id="div_btn" onclick="devided()">
+                            Devided
+                        </button>
+
+                    </div>
+
+                </div>
+                <h3 id="output"> The output will show here</h3>
+                <p class="error_massage"></p>
+                <div class="timer">
+                    <h3 class="timer"></h3>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <br><br>
+    <!-- bill card -->
+    <div id="bills_card_caontainer">
+        <div class="bills_card">
+            <h2>Bills Calculation</h2>
+            <div class="input_groups">
+                <div class="bill">
+                    <label for="bill">Bill</label>
+                    <input type="text" value="" class="inp1" name="bill">
+                </div>
+                <div class="bill">
+                    <label for="tax">Tax</label>
+                    <input type="text" value="" name="tax" class="inp2">
+                </div>
+                <div class="bill">
+                    <label for="discount">Discount</label>
+                    <input type="text" value="" name="discount" class="inp3">
+                </div>
+            </div>
+            <div class="output">
+                <button class="btn_bills" onclick="total_bill()">Total Bill</button>
+                <h4 class="show">show:</h4>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <!-- another projects -->
+
+    <div class="rafaelDraw">
+        <div class="conatiner_rafael">
+            <div class="card_draw">
+                <h1>Rafaell Draw Card</h1>
+                <div class="txt_input_group">
+                    <button class="add" onclick="addName()">Add Names</button>
+
+                    <div>
+                        <input type="text" class="txt_input_field" name="txt" value=""
+                            placeholder="Give Candiates Name">
+                    </div>
+                </div>
+                <div class="candiates_naame">
+                    <span>The Name of candiate will be included by above text field</span>
+                    <p class="names"></p>
+                </div>
+                <div class="selected">
+                    <button class="selectbtn" onclick="selectbtn()">Select
+                        Winer</button>
+                    <div class="rouded_icon">
+                        <i class="fa-solid fa-spinner"></i>
+                    </div>
+                    <h3 class="selected_name">Congress Mr: Ratul</h3>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="productCard">
+        <h1>The Card Will Be Loaded Dynamically</h1>
+        <div class="cardContainer">
+            <!-- <div class="cardspd">
+                <div class="pdimg">
+                    <img src="" alt="">
+                </div>
+                <div class="pdtitle">
+                    <h3 class="title">title</h3>
+                </div>
+                <div class="dit">
+                    <p class="details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, fugit.</p>
+
+                </div>
+                <div class="pdPrice">
+                    <p class="price">Price : 500</p>
+                    <p class="stock">In stock</p>
+                </div>
+                <button class="more" onclick="morePage()">More Details</button>
+            </div> -->
+        </div>
+    </div>
+
+
+    <!-- searching algorithm -->
+
+    <div class="searching">
+        <h1> Searching Algorithm</h1>
+        <div class="searching_card">
+            <div class="srhValue">
+                <input type="text" name="search" value="" class="search" placeholder="Search" required>
+                <button type="submit" onclick="searchBtn(srhArray)"> Match </button>
+            </div>
+            <div class="valuesShow">
+                <h4 class="matchValue">match</h4>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer"></div>
+
+
+
+    <script src="./javascritp.js"></script>
+</body>
+
+</html>
