@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Todo App</title>
+        <link
+            rel="stylesheet"
+            href="./todo.css" />
+    </head>
+    <body>
+        <!-- todo body -->
+        <div class="container">
+            <h1>This is a todo app</h1>
+            <div class="todo-body">
+                <form
+                    action=""
+                    class="todoform">
+                    <div class="inputfield">
+                        <input
+                            type="text"
+                            placeholder="Give Your Todo"
+                            class="todo-input"
+                            required />
+                        <button
+                            type="submit"
+                            class="todobtn">
+                            Add Todo
+                        </button>
+                    </div>
+                </form>
+                <div>
+                    <p class="massage"></p>
+                </div>
+
+                <div class="unorderlists">
+                    <ul class="lists"></ul>
+                </div>
+            </div>
+        </div>
+        <script src="./todo.js"></script>
+    </body>
+</html>
